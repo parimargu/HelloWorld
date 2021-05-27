@@ -1,5 +1,8 @@
 package com.datamaking.spring;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Tyre {
     private String brand;
 
@@ -8,9 +11,9 @@ public class Tyre {
         this.brand = brand;
     }*/
 
-    public Tyre(String brand) {
+   /* public Tyre(String brand) {
         this.brand = brand;
-    }
+    }*/
 
     public String getBrand() {
         return brand;
@@ -20,10 +23,15 @@ public class Tyre {
         this.brand = brand;
     }
 
-    @Override
+    /*@Override
     public String toString() {
         return "Tyre{" +
                 "brand='" + brand + '\'' +
                 '}';
+    }*/
+
+    @Override
+    public String toString() {
+        return "Tyre";
     }
 }
