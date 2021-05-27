@@ -30,7 +30,10 @@ public class App
 
         String xmlFile = "spring.xml";
         ApplicationContext context = new ClassPathXmlApplicationContext(xmlFile);
-        Vehicle vehi_obj = (Vehicle) context.getBean("bike");
-        vehi_obj.drive();
+
+        //Vehicle vehi_obj = (Vehicle) context.getBean("bike");
+        //vehi_obj.drive();
+        Tyre t = (Tyre) context.getBean("tyre");
+        System.out.println(t);
     }
 }
