@@ -10,5 +10,8 @@ public class App
     {
         System.out.println( "Hello World!" );
         System.out.println("Welcome to Maven based Java project ...");
+
+        Car car_obj = new Car();
+        car_obj.drive();
     }
 }
