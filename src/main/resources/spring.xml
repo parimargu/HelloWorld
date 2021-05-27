@@ -7,6 +7,7 @@
     <!-- <bean id="vehicle" class="com.datamaking.spring.Bike"></bean> -->
     <context:component-scan base-package="com.datamaking.spring"></context:component-scan>
     <bean id="tyre" class="com.datamaking.spring.Tyre">
-        <property name="brand" value="Ceat"></property>
+<!--        <property name="brand" value="Ceat"></property>-->
+        <constructor-arg name="brand" value="MRF"></constructor-arg>
     </bean>
 </beans>
